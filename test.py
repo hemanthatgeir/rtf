@@ -47,7 +47,7 @@ def extract_values(dict):
                 flat_list = "\n\t".join(dict[tag])
                 temp_dict[tag] = ":\n\t".join([tag, flat_list])
             else:
-                temp_dict[tag] = ":".join([tag, dict[tag]])  ##temp_dict = {"connection":'connection:connection1'}
+                temp_dict[tag] = ":".join([tag, dict[tag]])  
         else:
             temp_dict[tag] = ""
     connection = temp_dict[tag_list[0]]
